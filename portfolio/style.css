@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #eef6ef;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20pt;
+    padding-left: 4rem;
+    font-family: "Chivo Mono", Georgia, Times, 'Times New Roman', serif;
+}
+
+nav {
+    margin-right: 7vw;
+    display: flex;
+}
+
+.link {
+    margin-right: 25px;
+    color: rgb(24, 23, 23);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #0fac87;
+    margin-right: 25px;
+    text-decoration: underline;
+}
+
+
+
+#portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    background-color: #6c8971;
+    padding: .4rem;
+}
+
+#project {
+    background-color: #eef6ef;
+    font-family: "Chivo Mono", Georgia, Times, 'Times New Roman', serif;
+    height: 32rem;
+    padding: .2rem;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
+    overflow-y: auto;
+
+}
+
+#project img {
+    width: 90%;
+    padding: 0;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: wrap;
+    margin-left: .5rem;
+    margin-right: .5rem;
+
+}
+
+#abt-title {
+    font-size: 70px;
+    color: #6c8971;
+    text-align: center;
+
+    font-family: "Zilla Slab Highlight", 'Times New Roman', Times, serif;
+}
+
+#abt-text {
+    padding: 2rem;
+    font-size: 25px;
+    width: 60vw;
+    font-family: "Chivo Mono", Georgia, Times, 'Times New Roman', serif;
+}
+
+#abt-img {
+    max-width: 40vw;
+    max-height: 40vw;
+    width: auto;
+    height: auto;
+
+}
+
+#portfolio-title,
+#resume-title {
+    font-family: "Chivo Mono", Georgia, Times, 'Times New Roman', serif;
+    margin-top: 5rem;
+    padding-left: 2rem;
+    font-size: 40px;
+    color: #6c8971;
+}
+
+#info {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    height: 800px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+#resume iframe {
+    margin-left: 20%;
+    margin-right: 20%;
+
+    width: 60%;
+    height: 100%;
+
+}
+
+
+
+footer {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #eef6ef;
+    font-family: "Chivo Mono", Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+footer h3 {
+    margin: 0;
+    padding: .5rem;
+    color: #6c8971;
+    font-size: 20px;
+}
+
+footer p {
+    margin: 0;
+    padding: .2rem;
+}
+
+a {
+    color: #0fac87;
+}
+
+a:hover {
+    color: #183730;
+}
+
+
+@media screen and (max-width: 1100px) {
+    header {
+        height: 10vh;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        height: 5vh;
+        align-items: center;
+        font-size: 10pt;
+    }
+
+
+    nav {
+        align-items: center;
+        margin-right: 1vw;
+    }
+
+    .link {
+        margin-right: 10px;
+    }
+
+    #about-me {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    #abt-img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #abt-text {
+        width: 100%;
+    }
+
+
+
+
+
+}
