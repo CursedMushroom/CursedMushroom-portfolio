@@ -151,6 +151,55 @@ a:hover {
     color: #183730;
 }
 
+#decompIMG{
+    display: block;
+    width: 60%;
+    height: auto;
+
+}
+
+#role-desc{
+    background-color: #6c8971;
+    font-size: 20px;
+    font-family: "Chivo Mono", Georgia, Times, 'Times New Roman', serif;
+    padding: 1rem;
+    color:#eef6ef;
+
+}
+
+#concepts{
+    background-color: #6c8971;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.conceptIMG {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#finals {
+    background-color: #6c8971;
+    display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+
+}
+.finalscolumn {
+    flex: 25%;
+    max-width: 33%;
+    padding: 0 4px;
+  }
+.finalsIMG {
+    margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
 
 @media screen and (max-width: 1100px) {
     header {
